@@ -1,0 +1,327 @@
+﻿/* ==========================
+   VARIABLES
+========================== */
+
+:root{
+  --color-principal: #16b9b1;
+  --color-secundario: rgba(106, 242, 255, 0.5);
+  --color-fondo: #ffff;
+  --color-texto: #333;
+
+  --radio: 15px;
+
+  --sombra:
+    0 4px 10px rgba(0,0,0,0.08);
+
+  --transicion:
+    0.3s ease;
+}
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+
+  font-family: 'Poppins', sans-serif;
+
+  color: var(--color-texto);
+
+  overflow-x: hidden;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.header{
+
+  max-width: 1200px;
+
+  margin: 20px auto;
+
+  padding: 20px 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: var(--color-secundario);
+
+  backdrop-filter: blur(3px);
+
+  border-radius: var(--radio);
+
+  box-shadow: var(--sombra);
+}
+
+.logo img{
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
+/* ==========================
+   MENÚ
+========================== */
+
+.menu{
+
+  display: flex;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+.menu a{
+
+  text-decoration: none;
+
+  background-color: white;
+
+  color: var(--color-principal);
+
+  padding: 14px 22px;
+
+  border-radius: 10px;
+
+  font-weight: 500;
+
+  transition:
+    background-color var(--transicion),
+    color var(--transicion),
+    transform var(--transicion);
+}
+
+.menu a:hover,
+.menu a:focus{
+
+  background-color: var(--color-principal);
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   CONTENEDOR GENERAL
+========================== */
+
+.contenedorP{
+
+  max-width: 1200px;
+
+  margin: 20px auto;
+
+  padding: 40px;
+
+  border-radius: var(--radio);
+
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+  max-width: 1200px;
+
+  margin: 20px auto;
+
+  padding: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  background-color: var(--color-secundario);
+
+  backdrop-filter: blur(3px);
+
+  border-radius: var(--radio);
+
+  box-shadow: var(--sombra);
+}
+
+.footer .columna{
+
+  flex: 1;
+
+  min-width: 220px;
+}
+
+.footer h4{
+
+  margin-bottom: 15px;
+}
+
+.footer p,
+.footer a{
+
+  color: var(--color-texto);
+
+  line-height: 1.7;
+
+  text-decoration: none;
+}
+
+.footer a:hover{
+
+  color: var(--color-principal);
+}
+
+/* ==========================
+   WHATSAPP
+========================== */
+
+.whatsapp-btn{
+
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 8px 14px;
+
+  background: #25D366;
+
+  color: white;
+
+  font-size: 13px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition:
+    transform var(--transicion),
+    background-color var(--transicion);
+}
+
+.whatsapp-btn:hover{
+
+  background: #1ebe5d;
+
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   REDES
+========================== */
+
+.social-media{
+
+  text-align: center;
+}
+
+.location_icon{
+
+  list-style: none;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 0;
+}
+
+.location_icon img{
+
+  width: 32px;
+
+  transition: transform var(--transicion);
+}
+
+.location_icon img:hover{
+
+  transform: scale(1.1);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:1024px){
+
+  .header{
+
+    justify-content: center;
+
+    gap: 20px;
+  }
+
+  .contenedorP,
+  .footer{
+
+    padding: 25px;
+  }
+}
+
+@media (max-width:768px){
+
+  .header{
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px 15px;
+  }
+
+  .logo img{
+
+    height: 90px;
+  }
+
+  .menu{
+
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .menu a{
+
+    width: 90%;
+
+    text-align: center;
+  }
+
+  .contenedorP{
+
+    margin: 10px;
+
+    padding: 20px 15px;
+  }
+
+  .footer{
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px 15px;
+  }
+}

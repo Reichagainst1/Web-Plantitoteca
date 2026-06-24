@@ -1,0 +1,94 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+  /*background: url(../imagenes/fondoCopia.png);
+  background-size: cover;*/
+  color: #333;
+  font-size: 15px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.legal-container{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: url(../imagenes/fondoCopia.png);
+  background-size: cover;
+
+ /* background: rgba(255, 255, 255, 0.35);*/
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* TITULOS */
+h1{
+  font-size: 28px;
+  text-align: center;
+  color: #2d5a5a;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 18px;
+  margin-top: 25px;
+  color: #2d5a5a;
+  border-bottom: 1px solid #fd950d;
+  padding-bottom: 5px;
+}
+
+/* TEXTO */
+p, li{
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+ul{
+  padding-left: 20px;
+}
+
+
+.btn-volver{
+
+  display: inline-block;
+
+  margin: 25px 0 0 25px;
+
+  padding: 12px 20px;
+
+  background-color: #75eee8;
+
+  color: #333;
+
+  text-decoration: none;
+
+  border-radius: 12px;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-weight: 500;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.btn-volver:hover{
+
+  background-color: #16b9b1;
+
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+
